@@ -12,7 +12,7 @@
  * 
  * License: http://www.opensource.org/licenses/mit-license.php
  */
-
+// Changes done to provide extension points. 
 ;(function($) {
 
 	var defaults = {
@@ -126,8 +126,12 @@
 		if (this.config.mode != 'admin') {
 			return;
 		}
-
-		this.setupWorkspace();
+		// If method override and passes through configuration
+		if(this.config.createWorkspace && (typeof(this.config.createWorkspace) == 'function') ) {
+			return;
+		} else{
+			this.setupWorkspace();
+		}
 	};
 
 	Hotspot.prototype.createId = function() {
@@ -376,7 +380,8 @@
 	};
 
 	$.fn.hotspot = function (options) {
-		new Hotspot(this, options);
+		//Setting up object to gain control
+		$(this).data('hotspot', new Hotspot(this, options));
 		return this;
 	};
 
