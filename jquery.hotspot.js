@@ -126,7 +126,7 @@
 		if (this.config.mode != 'admin') {
 			return;
 		}
-		// If method override and passes through configuration
+		// If method override and passes through configuration. Call explicitly
 		if(this.config.createWorkspace && (typeof(this.config.createWorkspace) == 'function') ) {
 			return;
 		} else{
