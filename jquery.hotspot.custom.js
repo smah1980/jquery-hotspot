@@ -4,7 +4,7 @@
  * 
  * @requires jQuery {@link https://jquery.com/}
  * @author Firstname Lastname <email@address.dom>
- * @license LICENSE (/path/to/LICENSE.md)
+ * @license LICENSE (https://opensource.org/license/mit/)
  */
 
 'use strict';
