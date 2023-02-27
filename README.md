@@ -8,7 +8,7 @@ Little Change
 
 A Little change has been made in the main component and Object has been exposed to extend/override functionalities.
 
-### [View Demo](http://aniruddhanath.github.io/jquery-hotspot/)
+### [View Demo](https://htmlpreview.github.io/?https://github.com/smah1980/jquery-hotspot/blob/master/examples/demo-custom.html)
 
 Note: Ensures responsiveness with the latest update.
 
