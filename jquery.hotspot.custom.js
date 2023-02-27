@@ -2,8 +2,8 @@
  * jQuery plugin for image hotspots
  * Featuring public and private methods and overridable/extensible defaults.
  * 
- * @requires jQuery {@link https://jquery.com/}
- * @author Firstname Lastname <email@address.dom>
+ * @requires jQueryv3.6.3 {@link https://jquery.com/}
+ * @author smah1980
  * @license LICENSE (https://opensource.org/license/mit/)
  */
 
@@ -83,13 +83,6 @@
             if(this.options.createWorkspace){
                 this.options.createWorkspace();
             }
-            
-
-            this._$element
-            .addClass(CLASS_PREFIX + '-container')
-            .addClass(Object.values(this.options.theme).join(' '));
-
-            this._$element.append(this.options.containerHtml);
 
             this.#privateMethod();
         }
